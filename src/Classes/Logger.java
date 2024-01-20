@@ -1,12 +1,9 @@
 package Classes;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.nio.file.Path;
 import java.util.Date;
-
 import static java.nio.file.Files.exists;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -28,9 +25,7 @@ public class Logger {
     }
 
     public void Logging(String type, String action) {
-        String filePath = "log.txt";
         String text = "["+ new Date() + "] " + action + type + "\n";
-
         try {
             FileWriter writer = new FileWriter(filePath, true);
             BufferedWriter bufferWriter = new BufferedWriter(writer);

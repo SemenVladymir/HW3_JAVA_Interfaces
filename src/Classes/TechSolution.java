@@ -1,13 +1,4 @@
 package Classes;
-import java.io.FileInputStream;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.lang.reflect.Type;
-import java.nio.file.Path;
-
-import static java.nio.file.Files.exists;
 
 public class TechSolution {
     Mechanismable [] sol;
